@@ -1,0 +1,12 @@
+30.03.2021 23:20:13.949 [main] DEBUG  BinarySearcher - Search key = 62 in array -> [0 8 42 62 72 78 88 106 113 116 121 127 139 140 147]
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - Start index = 0, end index = 14
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - MidIndex = 7
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - "Key" = 62 < 106 at index = 7
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - Changed End Index from 14 to 6
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - Continue to search on the left side.
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - --------- And Recursion! ---------
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - Search key = 62 in array -> [0 8 42 62 72 78 88]
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - Start index = 0, end index = 6
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - MidIndex = 3
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - Voila! Key=62 is equals array[midIndex]=62 at index 3
+30.03.2021 23:20:13.964 [main] DEBUG  BinarySearcher - Search successful! Returned index = 3
