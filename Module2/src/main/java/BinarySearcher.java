@@ -1,13 +1,20 @@
+import com.google.common.base.Preconditions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 public class BinarySearcher {
     private static final Logger logger = LoggerFactory.getLogger(BinarySearcher.class);
 
-    public static int search(int[] array, int key, int startIndex, int endIndex) {
+    public static int search(int[] array, int key) {
+        Preconditions.checkArgument(array != null, "Array must not be null!");
+        return search(array, key, 0, array.length - 1);
+    }
+
+    private static int search(int[] array, int key, int startIndex, int endIndex) {
         logger.debug("Search key = " + key + " in array -> " + partArrayToString(array, startIndex, endIndex));
         logger.debug("Start index = " + startIndex + ", end index = " + endIndex);
-        int midIndex = (startIndex + endIndex) / 2;
+        int midIndex = (startIndex + endIndex) >>> 1;
         logger.debug("MidIndex = " + midIndex);
 
         if (startIndex > endIndex) {

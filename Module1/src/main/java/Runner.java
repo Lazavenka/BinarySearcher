@@ -38,7 +38,7 @@ public class Runner {
 
                 case 3 -> {
                     int key = getPositiveNumberFromConsole(in, "Input key:");
-                    keyIndex = BinarySearcher.search(array, key, 0, array.length - 1);
+                    keyIndex = BinarySearcher.search(array, key);
                     System.out.printf("Index of key \"%d\" is %d\n", key, keyIndex);
                 }
                 default -> throw new IllegalStateException("Unexpected value: " + choice);
